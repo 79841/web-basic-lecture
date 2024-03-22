@@ -14,7 +14,8 @@ height: 1000px;
 
 1. style 속성 사용하기
 2. style 태그 사용하기
-3. css 파일 만들기
+3. css 선택자
+4. css 파일 만들기
 
 ## style 속성 사용하기
 
@@ -239,6 +240,38 @@ id 속성은 언제 사용할까?
     <h1 class="red-letters">빨간색</h1>
     <h1>검은색</h1>
     <h1>검은색</h1>
+  </body>
+</html>
+```
+
+css 선택자 예시코드
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 스타일 태그 사용하기</title>
+    <style>
+      div {
+        background-color: lawngreen;
+      }
+
+      .box {
+        color: red;
+      }
+
+      #main-box {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-box" class="box">박스1</div>
+    <div class="box">박스2</div>
+    <div class="box">박스3</div>
+    <div>박스 아님</div>
   </body>
 </html>
 ```
